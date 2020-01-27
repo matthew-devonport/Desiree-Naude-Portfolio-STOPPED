@@ -1,0 +1,202 @@
+* {
+	margin: 0;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #c79d33;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+.header {
+	margin: 0 auto;
+	height: 100vh;
+	width: auto;
+	background-size: cover;
+	position: relative;
+}
+
+.text {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    /* text-align: center */
+}
+
+#headerPic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(./img/Des.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed
+}
+
+#header-logo {
+        display: block;
+        height: 25vh;
+        width: 40vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        padding-top: 40vh
+      }
+
+.top-links a {
+padding-right: 3vh;
+float: right;
+cursor: pointer;
+}
+
+
+
+.top-link-buttons:hover,
+.top-link-buttons:active {
+    color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;  
+}  
+
+@keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+
+
+/* ---- ABOUT ME ---- */
+
+#about-me-section {
+    background-color: #c79d33ad;
+}
+
+.aboutMe {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.about-me-photo {
+    /* display: block; */
+    height: 85vh;
+    width: auto;
+    padding-right: 5vh;
+    padding-left: 8vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    /* border-radius: 50%;    */
+   
+    
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 2000ms ease-out, transform 2000ms ease-out,
+      visibility 2000ms ease-out;
+    will-change: opacity, transform, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+
+/* --- Reusable Image Styles --- */
+
+
+
+
+
+/* ---- IMAGES ---- */
+
+
+#section-meals {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.822),rgba(0, 0, 0, 0.911)),
+    url('/img/IMG_3382.jpg');
+    background-color: black;
+    color: #c79d33;
+}
+
+
+
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+    padding-right: 2vh;
+    
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    
+}
+
+
+#flex-end {
+display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-top: 8vh;
+}
+
+#flex-start {
+    display: flex;
+  align-items: flex-start;
+  padding-bottom:12vh;
+}
+
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    /* -webkit-transform: scale(1.15);
+    transform: scale(1.15); */
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+    /* border: 1px solid #ccc; */
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    /* -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    position: inherit; */
+    
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height:0;
+    visibility: hidden
+}
